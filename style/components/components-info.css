@@ -1,5 +1,11 @@
+.info-container{
+    display: flex;
+    background-color: rgba(180, 180, 180, 0.47);
+    border-radius: 7px;
+    align-items: center;
+}
 .info-message{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;    
+    flex-direction: column;
+    
 }

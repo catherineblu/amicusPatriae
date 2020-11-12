@@ -6,7 +6,10 @@
     outline: none;
     cursor: pointer;
     padding: 16px 37px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
+}
+.btn--primary{
+    margin-right: 37px;
 }
 .btn--secondary{
     color: white;

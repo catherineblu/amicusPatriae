@@ -1,5 +1,7 @@
 .navbar{
     background-color: #76C7C1;
+}
+.navbar__wrapper{
     display: flex;
     align-items: center;
     justify-content: space-between;

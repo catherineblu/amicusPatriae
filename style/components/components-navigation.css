@@ -1,0 +1,13 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__items{
+    display: flex;
+}
+.navbar__item{
+    list-style: none;
+}
+.navbar__item a{
+    text-decoration: none;
+}

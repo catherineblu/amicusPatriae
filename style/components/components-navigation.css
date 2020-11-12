@@ -1,5 +1,7 @@
 .navbar{
+    background-color: #76C7C1;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .navbar__items{
@@ -7,7 +9,14 @@
 }
 .navbar__item{
     list-style: none;
+    margin-right: 33px;
 }
 .navbar__item a{
     text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.navbar__item a:hover{
+    cursor: pointer;
+    color: #DB564A;
 }

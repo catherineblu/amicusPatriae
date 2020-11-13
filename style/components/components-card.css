@@ -5,26 +5,29 @@
 .cards{
     display: flex;
     justify-content: space-between;
-    
 }
 .card{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    width: 23%;
     margin-top: 45px;
-    margin-right: 31px;
-    padding-top: 53px;
-    padding-right: 13px;
-    padding-left: 13px;
-    padding-bottom: 54px;
     border-radius: 7px;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
 }
 .card__image{
+    
+    padding: 53px 13px 13px;
     text-align: center;
     color:#75C9CB;
-    font-size: 58px;
+    font-size: 3.625rem;
 }
 .card__image:hover{
     color:#DB564A;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 53px;
+    
 }

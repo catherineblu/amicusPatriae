@@ -13,6 +13,7 @@
 .btn--secondary{
     position: absolute;
     margin-top: 295px;
+    margin-left: 70px;
     color: white;
     background-color: #75C9CB;
     text-transform: lowercase;
@@ -20,4 +21,5 @@
 .btn--secondary:hover{
     color: white;
     background-color: #DB564A;
+    
 }

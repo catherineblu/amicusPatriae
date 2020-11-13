@@ -1,4 +1,10 @@
-.copyrights{
+.footer{
+    background-color: #76C7C1;
+}
+.footer--copyrights{
+    background-color: hsl(174, 32%, 56%);
     display: flex;
-
+    font-size: 30px;
+    color: white;
+    justify-content: space-between;
 }

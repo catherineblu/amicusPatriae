@@ -30,3 +30,9 @@ p{
     font-size: 14px;
     line-height: 16px
 }
+#label{
+    font-size: 13px;
+    line-height: 141.19%;
+    font-weight: lighter;
+    text-align: center;
+}

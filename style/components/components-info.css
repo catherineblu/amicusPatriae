@@ -7,5 +7,7 @@
 .info-message{
     display: flex;
     flex-direction: column;
-    
+}
+.info{
+    background-color: #F4F4F4;
 }

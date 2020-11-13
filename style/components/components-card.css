@@ -4,8 +4,19 @@
 .cards{
     display: flex;
     justify-content: space-between;
+    
 }
 .card{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin-top: 45px;
+    margin-right: 31px;
+
     border-radius: 7px;
     box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
+}
+.card__image{
+    color: #75C9CB; 
+    padding: 53px 106px 17px 106px;
 }

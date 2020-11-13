@@ -1,23 +1,21 @@
 .btn{
     border-radius: 7px;
     border: none;
-    color: white;
-    background-color: #DB564A;
     outline: none;
     cursor: pointer;
     padding: 16px 37px;
-    text-transform: uppercase; 
 }
 .btn--primary{
-   
+    text-transform: uppercase; 
+    color: white;
+    background-color: #DB564A;
 }
 .btn--secondary{
+    position: absolute;
+    margin-top: 295px;
     color: white;
-    border-radius: 7px;
-    border: none;
     background-color: #75C9CB;
-    cursor: pointer;
-    padding: 16px 37px;
+    text-transform: lowercase;
 }
 .btn--secondary:hover{
     color: white;

@@ -16,6 +16,7 @@ h2{
     font-weight: normal;
     font-size: 32px;
     line-height: 37px;
+    margin: 0;
 }
 h3{
     color: #838D8A;
@@ -24,6 +25,9 @@ h3{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
+}
+h6{
+    margin: 0;
 }
 p{
     font-weight: normal;

@@ -12,6 +12,7 @@
 .navbar__item{
     list-style: none;
     margin-right: 33px;
+    color: white;
 }
 .navbar__item a{
     text-decoration: none;
@@ -22,3 +23,18 @@
     cursor: pointer;
     color: #DB564A;
 }
+
+a:hover {
+	color: #F60;
+}
+h1 {
+	font: 1.7em;
+	line-height: 110%;
+	color: #000;
+}
+p {
+	margin: 0 0 20px;
+}
+
+
+

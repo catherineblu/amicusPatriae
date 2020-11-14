@@ -8,3 +8,7 @@
     color: white;
     justify-content: space-between;
 }
+.social-media{
+    display: flex;
+    justify-content: space-between;
+}

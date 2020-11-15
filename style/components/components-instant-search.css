@@ -1,0 +1,36 @@
+.instant-search{
+    position: relative;
+    max-width: 250px;
+}
+.instant-search, 
+.instant-search__input{
+    font-family: 'Roboto', sans-serif;
+}
+.instant-search,
+.instant-search *{
+    transition: background 0.15s, box-shadow 0.15s;  
+}
+.instant-search:focus-within{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.instant-search,
+.instant-search__input-container{
+    border-radius: 7px;
+    overflow: hidden;
+}
+.instant-search__input-container{
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 6px;
+    background: brown;
+}
+.instant-search__input-container:focus-within{
+    background: white;
+}
+.instant-search__input{
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+}

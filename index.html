@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="style/components/components-program.css">
     <link rel="stylesheet" href="style/components/components-info.css">
     <link rel="stylesheet" href="style/components/components-map.css">
+    <link rel="stylesheet" href="style/components/components-instant-search.css">
 
 
 </head>
@@ -517,16 +518,34 @@
                     <h2> Very useful site showing Europe’s beauties<h2>
                             <p>Just hover over each country and check the capital. When you click on the country, you
                                 will be
-                                directed in another page showing you all the important things.</p>
+                                directed in another page showing you all the important things. </p>
                 </div>
-                <button class="btn btn--primary">View more</button>
+               <button class="btn btn--primary">View more</button>
 
-                <div class="input-search">
+                <div id="searchCountries" class="instant-search">
+                    <div class="instant-search__input-container">
+                        <input class="instant-search__input" type="text" spellcheck="false" placeholder="Country?">
+                        <i class="fas fa-search instant-search__icon"></i>
+                    </div>
+
+                    <div class="instant-search__result-container">
+                        <a href="#" class="instant-search__result">
+                            <div class="instant-search__title">Country<div>
+                                <p class="instant-search__paragraph">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed libero minima laudantium numquam impedit quam, ratione obcaecati iusto quibusdam voluptate esse modi velit nihil consequuntur perspiciatis. Accusamus aspernatur dolores voluptas?
+                                </p>
+                        </a>
+                    </div>
+                </div>
+
+               <!-- <div class="input-search">
                     <form action="" class="search">
                         <input class="search-box" type="search" id="search-box" autocomplete="off">
                         <label class="search-label" for="search-box"><i class="fa fa-search"></i></label>
                     </form>
-                </div>
+                </div>-->
+
+
             </div>
         </section>
 
@@ -577,7 +596,7 @@
             </div>
         </section>
     </section>
-
+<!--
     <section class="footer">
         <section class="container">
             <div class="footer--columns">
@@ -594,7 +613,7 @@
                 <i class="fab fa-linkedin"></i>
             </div>
         </div>
-    </section>
+    </section>-->
 </body>
 
 </html>

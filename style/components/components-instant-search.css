@@ -1,6 +1,7 @@
-.instant-search{
+/*.instant-search{
     position: relative;
     max-width: 250px;
+    
 }
 .instant-search, 
 .instant-search__input{

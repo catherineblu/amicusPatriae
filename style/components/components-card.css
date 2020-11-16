@@ -24,9 +24,13 @@
     text-align: center;
     color:#75C9CB;
     font-size: 3.625rem;
+    max-width: 100%;
 }
 .card__image:hover{
     color:#DB564A;
+}
+/*.card__flag{
+    max-width: 100%;*/
 }
 .text-box{
     display: flex;

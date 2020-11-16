@@ -21,5 +21,21 @@
 .btn--secondary:hover{
     color: white;
     background-color: #DB564A;
-    
+}
+.btn--dark{
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #838D8A;
+}
+.btn--dark .fas{
+    display: none;
+}
+body.dark .btn--dark .fas{
+    display: inline-block;
+}
+body.dark .btn--dark .far{
+    display: none;
 }

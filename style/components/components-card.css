@@ -30,13 +30,9 @@
 .card__image:hover{
     color:#DB564A;
 }
-/*.card__flag{
-    max-width: 100%;
+
+.card--country{
+    max-width: 300px;
+    cursor: pointer;
 }
-.text-box{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 53px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+

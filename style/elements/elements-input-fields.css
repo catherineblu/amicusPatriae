@@ -1,0 +1,8 @@
+.input__search{
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
+    padding: 10px;
+    font-size: 14px;
+    min-width: 300px;
+}

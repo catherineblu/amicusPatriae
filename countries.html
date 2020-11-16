@@ -26,6 +26,7 @@
 
     <link rel="stylesheet" href="style/elements/elements-links.css">
     <link rel="stylesheet" href="style/elements/elements-input-fields.css">
+    <link rel="stylesheet" href="style/elements/elements-dropdown.css">
 
     <link rel="stylesheet" href="style/utilites/utilities-centered.css">
     <link rel="stylesheet" href="style/utilites/utilities-hidden.css">
@@ -79,8 +80,14 @@
     </section>
     <section>
         <div class="container">
-            <input type="text" placeholder="Search for a country">
+            <input 
+            id="search" 
+            class="input__search" 
+            type="text" 
+            placeholder="Search for a country">
             <div class="dropdown">
+                Filter by Region
+					<i class="fas fa-chevron-down"></i>
                 <ul>
                     <li>Central Europe</li>
                     <li>East-Central Europe</li>
@@ -96,6 +103,7 @@
             </div>
         </div>
     </section>
+    
     <section>
         <div class="cards container">
             <article class="card">
@@ -107,7 +115,7 @@
                     <p id="label"><strong>Capital: </strong>Berlin</p>
                 </div>
                </article>
-               
+               <!--
                 <article class="card">
                     <img class="card__image" src="https://restcountries.eu/data/ukr.svg" alt="The flag of Ukraine">
                     <div class="country-box">
@@ -117,6 +125,7 @@
                         <p id="label"><strong>Capital: </strong>Kiyv</p>
                     </div>
                 </article>
+                
                     <article class="card">
                         <img class="card__image" src="https://restcountries.eu/data/swe.svg" alt="The flag of Sweden">
                         <div class="country-box">
@@ -133,4 +142,4 @@
                             <p id="label"><strong>Region: </strong>Northern Europe</p>
                             <p id="label"><strong>Capital: </strong>Copenhagen</p>
                         </div>
-                    </article>
+                    </article>-->

@@ -1,0 +1,7 @@
+body.dark{
+    background-color: hsl(207, 26%, 17%);
+    --background-el: hsl(209, 23%, 22%);
+}
+:root {
+    --background-el: hsl(0, 0%, 100%);
+}

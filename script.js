@@ -3,8 +3,9 @@
 //Search
 //Filter
 //Modal
-//API call
+//API call *completed*
 const countriesEl = document.getElementById('countries');
+const toggleBtn = document.getElementById('toggle');
 
 getCountries();
 
@@ -31,5 +32,7 @@ function displayCountries(countries) {
         </div>`
         countriesEl.appendChild(countryEl);
     });
-
 }
+toggleBtn.addEventListener('click', ()=>{
+    document.body.classList.toggle('dark');
+});

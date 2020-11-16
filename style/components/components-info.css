@@ -1,7 +1,6 @@
 .info-container{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(180, 180, 180, 0.47);
     border-radius: 7px;
     align-items: center;
     flex-wrap: wrap;
@@ -11,7 +10,6 @@
     flex-direction: column;
 }
 .info{
-    background-color: #F4F4F4;
     min-height: 600px;
 }
 

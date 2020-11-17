@@ -1,5 +1,5 @@
 //TODO: 
-//Dark mode toggle
+//Dark mode toggle *completed, but after a testing, I decided that for this site it will not be okay, the map looks bad with a dark background
 //Search
 //Filter
 //Modal
@@ -7,6 +7,7 @@
 const countriesEl = document.getElementById('countries');
 const toggleBtn = document.getElementById('toggle');
 const filterBtn = document.getElementById('filter');
+const searchEl = document.getElementById('search');
 
 getCountries();
 
@@ -26,7 +27,7 @@ function displayCountries(countries) {
         <img class="card__image" src="${country.flag}" alt="The flag of Germany">
     </div>
         <div class="country-box">
-            <h3>${country.name}</h3>
+            <h3 class="country-name">${country.name}</h3>
             <p id="label"><strong>Population: </strong>${country.population}</p>
             <p id="label"><strong>Region: </strong>${country.subregion}</p>
             <p id="label"><strong>Capital: </strong>${country.capital}</p>
@@ -39,4 +40,17 @@ toggleBtn.addEventListener('click', ()=>{
 });
 filterBtn.addEventListener('click', ()=>{
     filterBtn.classList.toggle('open');
+});
+searchEl.addEventListener('input', (e) => { 
+    const { value } = e.target;
+    const countryName = document.querySelectorAll('.country-name');
+
+    countryName.forEach(name => {
+        console.log(name.innerText);
+        if(name.innerText.toLowerCase().includes(value.toLowerCase())){
+            name.parentElement.parentElement.style.display = 'block';
+        } else {
+            name.parentElement.parentElement.style.display = 'none';
+        }
+    });
 });

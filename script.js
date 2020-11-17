@@ -6,6 +6,7 @@
 //API call *completed*
 const countriesEl = document.getElementById('countries');
 const toggleBtn = document.getElementById('toggle');
+const filterBtn = document.getElementById('filter');
 
 getCountries();
 
@@ -35,4 +36,7 @@ function displayCountries(countries) {
 }
 toggleBtn.addEventListener('click', ()=>{
     document.body.classList.toggle('dark');
+});
+filterBtn.addEventListener('click', ()=>{
+    filterBtn.classList.toggle('open');
 });

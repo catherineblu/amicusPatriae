@@ -7,6 +7,7 @@
 const countriesEl = document.getElementById('countries');
 const toggleBtn = document.getElementById('toggle');
 const filterBtn = document.getElementById('filter');
+const regionFilters = filterBtn.querySelectorAll('li');
 const searchEl = document.getElementById('search');
 
 getCountries();
@@ -29,28 +30,49 @@ function displayCountries(countries) {
         <div class="country-box">
             <h3 class="country-name">${country.name}</h3>
             <p id="label"><strong>Population: </strong>${country.population}</p>
-            <p id="label"><strong>Region: </strong>${country.subregion}</p>
+            <p id ="label" class="country-region">
+            <strong>Region:</strong>
+            ${country.subregion}
+        </p>
             <p id="label"><strong>Capital: </strong>${country.capital}</p>
         </div>`
         countriesEl.appendChild(countryEl);
     });
 }
-toggleBtn.addEventListener('click', ()=>{
+//toogle theme - currently not working
+toggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });
-filterBtn.addEventListener('click', ()=>{
+//show/hide filters 
+filterBtn.addEventListener('click', () => {
     filterBtn.classList.toggle('open');
 });
-searchEl.addEventListener('input', (e) => { 
+//search countries
+searchEl.addEventListener('input', (e) => {
     const { value } = e.target;
     const countryName = document.querySelectorAll('.country-name');
 
     countryName.forEach(name => {
-        console.log(name.innerText);
-        if(name.innerText.toLowerCase().includes(value.toLowerCase())){
+        if (name.innerText.toLowerCase().includes(value.toLowerCase())) {
             name.parentElement.parentElement.style.display = 'block';
         } else {
             name.parentElement.parentElement.style.display = 'none';
         }
+    });
+});
+//filtering countries by region
+regionFilters.forEach(filter => {
+    filter.addEventListener('click', () => {
+        const value = filter.innerText;
+        const countryRegion = document.querySelectorAll('.country-region');
+
+        countryRegion.forEach(region => {
+            if (region.innerText.includes(value) || value === 'All') {
+                // .card -> .card-body -> .country-region
+                region.parentElement.parentElement.style.display = 'block';
+            } else {
+                region.parentElement.parentElement.style.display = 'none';
+            }
+        });
     });
 });

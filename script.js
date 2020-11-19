@@ -1,7 +1,7 @@
 //TODO: 
 //Dark mode toggle *completed, but after a testing, I decided that for this site it will not be okay, the map looks bad with a dark background
-//Search
-//Filter
+//Search*completed*
+//Filter*completed*
 //Modal
 //API call *completed*
 const countriesEl = document.getElementById('countries');
@@ -9,6 +9,8 @@ const toggleBtn = document.getElementById('toggle');
 const filterBtn = document.getElementById('filter');
 const regionFilters = filterBtn.querySelectorAll('li');
 const searchEl = document.getElementById('search');
+const modal = document.getElementById('modal');
+
 
 getCountries();
 
@@ -35,7 +37,11 @@ function displayCountries(countries) {
             ${country.subregion}
         </p>
             <p id="label"><strong>Capital: </strong>${country.capital}</p>
-        </div>`
+        </div>`;
+
+        countriesEl.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
         countriesEl.appendChild(countryEl);
     });
 }

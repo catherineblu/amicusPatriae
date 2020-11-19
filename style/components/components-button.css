@@ -39,3 +39,11 @@ body.dark .btn--dark .fas{
 body.dark .btn--dark .far{
     display: none;
 }
+
+.btn-close{
+    font-size: 20px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

@@ -40,6 +40,7 @@
     <link rel="stylesheet" href="style/components/components-info.css">
     <link rel="stylesheet" href="style/components/components-map.css">
     <link rel="stylesheet" href="style/components/components-search.css">
+    <link rel="stylesheet" href="style/components/components-modal.css">
     
 
 
@@ -90,6 +91,7 @@
                 Filter by Region
 					<i class="fas fa-chevron-down"></i>
                 <ul>
+                    <li>All</li>
                     <li>Eastern Europe</li>
                     <li>Northern Europe</li>
                     <li>Western Europe</li>
@@ -98,12 +100,29 @@
             </div>
         </div>
     </section>
-    
+
+    <div class="modal" id="modal">
+        <div>
+            <div class="container">
+                <button class = "btn-close" id="close"><i class = "fas fa-times"></i></button>
+                <img src="https://restcountries.eu/data/esp.svg" alt="">
+                <div  class="modal-body">
+                    <h3 class="country-name">${country.name}</h3>
+                <p id="label"><strong>Population: </strong>${country.population}</p>
+                <p id ="label" class="country-region">
+                <strong>Region:</strong>
+                ${country.subregion}
+            </p>
+                <p id="label"><strong>Capital: </strong>${country.capital}</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+
     <section>
         <div class="cards container" id="countries">
 
             <h2>Countries loading...</h2>
-           
 
 <script src="script.js"></script>
 </body>

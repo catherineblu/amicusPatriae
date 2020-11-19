@@ -42,9 +42,22 @@ function displayCountries(countries) {
 
         countriesEl.addEventListener('click', () => {
             modal.style.display = 'flex';
+            showCountryDetails(country);
+
         });
         countriesEl.appendChild(countryEl);
     });
+}
+
+function showCountryDetails(country){
+    modal.querySelector('.modal-body').innerHTML = `
+    <h3 class="country-name">${country.name}</h3>
+                <p id="label"><strong>Population: </strong>${country.population}</p>
+                <p id ="label" class="country-region">
+                <strong>Region:</strong>
+                ${country.subregion}
+            </p>
+    `;
 }
 //toogle theme - currently not working
 toggleBtn.addEventListener('click', () => {

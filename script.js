@@ -10,6 +10,7 @@ const filterBtn = document.getElementById('filter');
 const regionFilters = filterBtn.querySelectorAll('li');
 const searchEl = document.getElementById('search');
 const modal = document.getElementById('modal');
+const closeBtn = document.getElementById('close');
 
 
 getCountries();
@@ -52,6 +53,10 @@ toggleBtn.addEventListener('click', () => {
 //show/hide filters 
 filterBtn.addEventListener('click', () => {
     filterBtn.classList.toggle('open');
+});
+//close
+closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
 });
 //search countries
 searchEl.addEventListener('input', (e) => {
